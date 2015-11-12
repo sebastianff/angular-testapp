@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="store"><!--This is a directive that binds the document with the module in the app.js file-->
+<head>
+	<link rel="stylesheet" type="text/css" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style">
+	<title></title>
+</head>
+<body>
+	<script src="bower_components\angular\angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<section>
+		<ul class="nav nav-pills">
+			<li><a href ng-click="tab = 1">Description</a></li>
+			<li><a href ng-click="tab = 2">Specifications</a></li>
+			<li><a href ng-click="tab = 3">Reviews</a></li>
+		</ul>
+		{{tab}}
+	</section>
+</body>
+</html>
